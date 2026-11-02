@@ -39,7 +39,7 @@ function Login({ onLogin }) {
     if (authError) setError(authError.message); else onLogin(data.session);
   }
   return <main className="login-shell"><section className="login-card">
-    <div className="brand-mark">TPP<span>ADMIN</span></div><div className="eyebrow">THE PERFUME PIRATE · CATALOGUE</div>
+    <div className="brand-mark">PS<span>ADMIN</span></div><div className="eyebrow">PERFUME STORE · CATALOGUE</div>
     <h1>Welcome back.</h1><p>Sign in to manage your fragrance catalogue.</p>
     <form onSubmit={submit} className="login-form"><label>Email address<input autoComplete="username" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required /></label>
       <label>Password<input autoComplete="current-password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} required /></label>
@@ -389,7 +389,7 @@ export default function AdminApp() {
           <footer className="review-actions">{review.status !== "approved" && <button className="primary-button" onClick={() => moderateReview(review, "approved")}><Check size={16} /> Approve & publish</button>}{review.status !== "rejected" && <button className="secondary-button" onClick={() => moderateReview(review, "rejected")}>Reject</button>}<button className="review-delete" onClick={() => deleteReview(review)}><Trash2 size={16} /> Delete</button></footer>
         </article>)}</div>}
       </div> : activeSection === "overview" ? <div className="overview-page">
-        <div className="page-heading"><div><div className="eyebrow">THE PERFUME PIRATE · ADMIN</div><h1>Overview</h1><p>Your product catalogue at a glance.</p></div><button className="primary-button add-button" onClick={() => setEditor(null)}><PackagePlus size={18} /> Add product</button></div>
+        <div className="page-heading"><div><div className="eyebrow">PERFUME STORE · ADMIN</div><h1>Overview</h1><p>Your product catalogue at a glance.</p></div><button className="primary-button add-button" onClick={() => setEditor(null)}><PackagePlus size={18} /> Add product</button></div>
         <div className="stat-grid"><article className="stat-card"><div className="stat-top"><span>Total products</span><span className="stat-icon"><Box size={19} /></span></div><strong>{stats.total}</strong><small>Products in your catalogue</small></article><article className="stat-card"><div className="stat-top"><span>Available sizes</span><span className="stat-icon green"><Check size={19} /></span></div><strong>{products.reduce((sum, product) => sum + (product.sizes || []).filter((size) => size.in_stock !== false).length, 0)}</strong><small>Variants ready to order</small></article><article className="stat-card"><div className="stat-top"><span>Out of stock</span><span className="stat-icon purple"><CircleHelp size={19} /></span></div><strong>{outOfStock.length}</strong><small>Products with no available sizes</small></article></div>
         {problem && <div className="error-banner page-error">{problem}</div>}{notice && <div className="success-banner">{notice}</div>}
         <div className="overview-grid">

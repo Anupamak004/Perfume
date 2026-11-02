@@ -66,15 +66,14 @@ export default function Navbar() {
             aria-label={`${SITE_CONFIG.brandName} home`}
           >
             <img
-              src="/image.webp"
+              src="/perfume-store-logo.svg"
               alt=""
               aria-hidden="true"
               className="h-10 w-10 shrink-0 object-contain sm:h-14 sm:w-14 lg:h-16 lg:w-16"
             />
             <span className="brand-neon">
-              <span>THE</span>
               <span>PERFUME</span>
-              <span>PIRATE</span>
+              <span>STORE</span>
             </span>
           </Link>
 

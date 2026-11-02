@@ -30,7 +30,7 @@ export default function About() {
       <title>{`About Us | ${SITE_CONFIG.brandName}`}</title>
       <meta
         name="description"
-        content={`Discover the story behind ${SITE_CONFIG.brandName} — premium fragrances, curated decants, and bespoke scents in Chhatrapati Sambhajinagar, Maharashtra.`}
+        content={`Discover ${SITE_CONFIG.brandName} — premium fragrances, curated decants, and bespoke scents.`}
       />
 
       <HeroSection
@@ -40,7 +40,7 @@ export default function About() {
           <>
             ABOUT
             <br />
-            THE PERFUME PIRATE
+            PERFUME STORE
           </>
         }
         noOverlay
@@ -58,7 +58,7 @@ export default function About() {
         <div className="container-px mx-auto max-w-content">
           <div className="mx-auto max-w-2xl text-center">
             <span className="text-sm font-bold uppercase tracking-wide3 text-gold sm:text-base">Our Story</span>
-            <h2 className="mt-4 font-display text-4xl text-ink sm:text-6xl">A Fragrance Destination in Chhatrapati Sambhajinagar</h2>
+            <h2 className="mt-4 font-display text-4xl text-ink sm:text-6xl">A Destination for Fragrance Lovers</h2>
             <p className="mt-6 text-lg leading-relaxed text-ink/75 sm:text-xl">
               {SITE_CONFIG.brandName} was founded with a singular pursuit: making the world of exceptional perfumery truly accessible and deeply personal. We curate premium perfumes, rare attars, and authentic fragrance decants crafted to become uniquely yours.
             </p>
@@ -102,7 +102,7 @@ export default function About() {
             <div className="aspect-[16/9] overflow-hidden">
               <img
                 src="/images/about.webp"
-                alt={`Interior of ${SITE_CONFIG.brandName} boutique in Chhatrapati Sambhajinagar`}
+                alt={`Interior of ${SITE_CONFIG.brandName} boutique`}
                 loading="lazy"
                 className="h-full w-full object-cover"
               />

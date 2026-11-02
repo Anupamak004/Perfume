@@ -39,7 +39,7 @@ export default function Contact() {
       <title>{`Contact Us | ${SITE_CONFIG.brandName}`}</title>
       <meta
         name="description"
-        content={`Get in touch with ${SITE_CONFIG.brandName} in Chhatrapati Sambhajinagar, Maharashtra. Visit our store, call, WhatsApp, or send us a message.`}
+        content={`Get in touch with ${SITE_CONFIG.brandName}. Visit our store, call, WhatsApp, or send us a message.`}
       />
 
       <HeroSection

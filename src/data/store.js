@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────────────────
-// THE PERFUME PIRATE — STORE & CONTACT INFORMATION
+// PERFUME STORE — STORE & CONTACT INFORMATION
 // ─────────────────────────────────────────────────────────────────────────
 
 import { SITE_CONFIG } from "./siteConfig";
@@ -16,7 +16,7 @@ export const STORE_INFO = {
   phoneHref: SITE_CONFIG.phoneHref,
   whatsapp: SITE_CONFIG.whatsapp,
   whatsappHref: SITE_CONFIG.whatsappHref,
-  email: "contact@theperfumepirate.com",
+  email: "hello@perfumestore.example",
   instagram: SITE_CONFIG.instagram,
   instagramHandle: SITE_CONFIG.instagramHandle,
   facebook: SITE_CONFIG.instagram, // Primary social presence is Instagram

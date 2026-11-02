@@ -1,7 +1,7 @@
 // ─────────────────────────────────────────────────────────────────────────
-// THE PERFUME PIRATE — PRODUCT CATALOGUE & DECANTS
+// PERFUME STORE — PRODUCT CATALOGUE & DECANTS
 //
-// Central product catalogue for The Perfume Pirate.
+// Central product catalogue for Perfume Store.
 // Supporting full fragrance bottles and discovery decants.
 // ─────────────────────────────────────────────────────────────────────────
 
@@ -13,7 +13,7 @@ export const getDefaultSizes = (basePrice) => [
 ];
 
 const UNSPLASH = {
-  goldBottle: "/images/hero-image7.webp",
+  goldBottle: "/images/hero-image.webp",
   darkBottle: "https://images.unsplash.com/photo-1749264361617-dbe17a223f54",
   storeShelf: "https://images.unsplash.com/photo-1763633924253-3c92ce0ba7cf",
   menBottle: "https://images.unsplash.com/photo-1591892212776-a09de24dbe84",

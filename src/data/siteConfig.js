@@ -1,43 +1,44 @@
 // ─────────────────────────────────────────────────────────────────────────
-// THE PERFUME PIRATE — CENTRAL SITE & BUSINESS CONFIGURATION
+// PERFUME STORE — CENTRAL SITE & BUSINESS CONFIGURATION
 // ─────────────────────────────────────────────────────────────────────────
 
 export const SITE_CONFIG = {
-  brandName: "The Perfume Pirate",
-  shortName: "The Perfume Pirate",
+  brandName: "Perfume Store",
+  shortName: "Perfume Store",
   tagline: "Premium Fragrances & Decants",
   subtitle:
     "Discover a scent that becomes uniquely yours. Luxury perfumes, rare blends, and authentic decants.",
   businessType: "Perfume / Fragrance / Perfume Decants",
 
-  phone: "+91 9890696922",
-  phoneRaw: "+919890696922",
-  phoneHref: "tel:+919890696922",
+  phone: "9999999999",
+  phoneRaw: "9999999999",
+  phoneHref: "tel:9999999999",
 
-  whatsapp: "+91 9890696922",
-  whatsappRaw: "919890696922",
-  whatsappHref: "https://wa.me/919890696922",
+  whatsapp: "9999999999",
+  whatsappRaw: "919999999999",
+  whatsappHref: "https://wa.me/919999999999",
 
-  instagram: "https://www.instagram.com/the_perfume_pirate/",
-  instagramHandle: "@the_perfume_pirate",
+  instagram: "https://www.instagram.com/",
+  instagramHandle: "",
 
-  mapsHref: "https://www.google.com/maps/place/The+Perfume+Pirate/",
+  mapsHref: "https://www.google.com/maps/search/?api=1&query=" +
+    encodeURIComponent("ABC Building, Main Street, Your City, India"),
   mapsEmbedSrc:
     "https://maps.google.com/maps?q=" +
     encodeURIComponent(
-      "The Perfume Pirate, Plot No. 492, Behind Icy Spicy, Kamgar Chowk, N 3, CIDCO, Chhatrapati Sambhajinagar, Maharashtra 431003, India",
+      "ABC Building, Main Street, Your City, India",
     ) +
     "&t=&z=15&ie=UTF8&iwloc=&output=embed",
 
   address: {
-    line1: "Plot No. 492, Behind Icy Spicy",
-    line2: "Kamgar Chowk, N 3, CIDCO",
-    line3: "Chhatrapati Sambhajinagar, Maharashtra 431003, India",
-    city: "Chhatrapati Sambhajinagar",
-    state: "Maharashtra",
-    pincode: "431003",
+    line1: "ABC Building",
+    line2: "Main Street",
+    line3: "Your City, India",
+    city: "Your City",
+    state: "Your State",
+    pincode: "",
     country: "India",
-    full: "Plot No. 492, Behind Icy Spicy, Kamgar Chowk, N 3, CIDCO, Chhatrapati Sambhajinagar, Maharashtra 431003, India",
+    full: "ABC Building, Main Street, Your City, India",
   },
 
   hours: [
@@ -47,9 +48,9 @@ export const SITE_CONFIG = {
   hoursNote: "Timings may vary on holidays. Reach out on WhatsApp to confirm.",
 
   meta: {
-    title: "The Perfume Pirate | Premium Fragrances & Decants",
+    title: "Perfume Store | Premium Fragrances & Decants",
     description:
-      "The Perfume Pirate — premium fragrance boutique & decants in Chhatrapati Sambhajinagar, Maharashtra. Explore curated luxury perfumes, rare oud, attar and decants.",
+      "Perfume Store — explore premium fragrances, rare oud, attar, and authentic decants.",
   },
 };
 
@@ -57,7 +58,7 @@ export const SITE_CONFIG = {
  * Generate a prefilled WhatsApp link for a single product order/enquiry
  */
 export function getProductWhatsAppUrl(product, sizeLabel, price) {
-  const text = `Hi The Perfume Pirate! I would like to order / inquire about:
+  const text = `Hi ${SITE_CONFIG.brandName}! I would like to order / inquire about:
 *Product:* ${product.name}
 ${sizeLabel ? `*Size/Decant:* ${sizeLabel}\n` : ""}*Price:* ₹${price ?? product.price}
 *Category:* ${product.fragranceType || product.category}
@@ -87,7 +88,7 @@ export function getCartWhatsAppUrl(items, subtotal, customer = null) {
 ${customer.email ? `*Email:* ${customer.email}\n` : ""}*Delivery address:* ${customer.address}, ${customer.city}, ${customer.state} ${customer.pincode}, India${customer.instructions ? `\n*Delivery instructions:* ${customer.instructions}` : ""}`
     : "";
 
-  const text = `Hi The Perfume Pirate! I would like to place an order from your website:
+  const text = `Hi ${SITE_CONFIG.brandName}! I would like to place an order from your website:
 
 ${lines.join("\n")}
 

@@ -1,6 +1,6 @@
-# The Perfume Pirate — Website
+# Perfume Store — Website
 
-A premium fragrance and decant boutique website for **The Perfume Pirate** (Chhatrapati Sambhajinagar, Maharashtra) — built with React, Vite, Tailwind CSS, React Router, Lucide icons and Framer Motion.
+A premium fragrance and decant boutique website for **Perfume Store** — built with React, Vite, Tailwind CSS, React Router, Lucide icons and Framer Motion.
 
 ## Getting Started
 
@@ -36,11 +36,11 @@ src/
 ## Business Configuration
 
 All client contact details are centrally managed in `src/data/siteConfig.js`:
-- **Brand**: The Perfume Pirate
-- **Phone / WhatsApp**: `+91 9890696922`
-- **Address**: Plot No. 492, Behind Icy Spicy, Kamgar Chowk, N 3, CIDCO, Chhatrapati Sambhajinagar, Maharashtra 431003, India
-- **Instagram**: `https://www.instagram.com/the_perfume_pirate/`
-- **Google Maps**: `https://www.google.com/maps/place/The+Perfume+Pirate/`
+- **Brand**: Perfume Store
+- **Phone / WhatsApp**: `9999999999`
+- **Address**: ABC Building, Main Street, Your City, India
+- **Instagram**: `https://www.instagram.com/`
+- **Google Maps**: Generic placeholder search for ABC Building
 
 ## Features
 

@@ -108,7 +108,7 @@ export default function Footer() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-cream/10 pt-6 text-xs text-cream/40 sm:flex-row">
           <p>© {new Date().getFullYear()} {SITE_CONFIG.brandName}. All rights reserved.</p>
-          <p>Chhatrapati Sambhajinagar, Maharashtra, India</p>
+          <p>{SITE_CONFIG.address.city}, {SITE_CONFIG.address.country}</p>
         </div>
       </div>
     </footer>
